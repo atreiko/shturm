@@ -1,0 +1,28 @@
+@import '../../scss/variables.scss';
+
+.title {
+  font: 700 1.5em/1.5 Montserrat,sans-serif;
+  color: #000;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: left;
+  padding-bottom: 20px;
+  position: relative;
+
+  &::after {
+    content: '';
+    background: $color-primary;
+    // display: block;
+    height: 5px;
+    width: 60px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  @media screen and (max-width: $container-width-sm) {
+    // .title {
+    //   padding: 0 1rem;
+    // }
+  }
+}

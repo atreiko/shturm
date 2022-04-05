@@ -62,3 +62,7 @@ export const smallPosts = [
     alt: 'irpin'
   },
 ]
+
+console.log(
+  [...largePosts, ...smallPosts]
+);

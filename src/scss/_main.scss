@@ -14,3 +14,25 @@ body {
   line-height: 1.7;
 }
 
+section {
+  margin-top: 6rem;
+}
+
+.container {
+  width: $container-width-lg;
+  margin: 0 auto;
+
+  @media screen and (max-width: 1024px) {
+    width: $container-width-md;
+  }
+
+  @media screen and (max-width: 600px) {
+    width: $container-width-sm;
+  }
+
+  @media screen and (max-width: 420px) {
+    width: 100%;
+    padding: 0 .6em;
+  }
+}
+
