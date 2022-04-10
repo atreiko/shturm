@@ -3,7 +3,14 @@ import './footer.scss'
 
 const Footer = () => {
   return (
-    <div>Footer</div>
+    <footer className='footer'>
+      <div className="waves"></div>
+      <div className="container">
+        <div className='footer__inner'>
+
+        </div>
+      </div>
+    </footer>
   )
 }
 

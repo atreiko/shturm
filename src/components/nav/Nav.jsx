@@ -9,7 +9,7 @@ const Nav = ({ isOpen, setIsOpen }) => {
       <div className='navbar__container'>
         <Link to='/#'><Hamburger toggled={isOpen} toggle={setIsOpen} /></Link>
         <Link to='/'><span>ШТУРМ</span></Link>
-        <Link to='tel:+380934200990'>(093) 420 09 90</Link>
+        {/* <Link to='tel:+380934200990'>(093) 420 09 90</Link> */}
       </div>
     </nav>
   )

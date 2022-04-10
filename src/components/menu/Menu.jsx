@@ -12,8 +12,8 @@ const Menu = ({ isOpen }) => {
           <h3>Про нас</h3>
           <div className='menu__item-links'>
             <Link className='menu__item-link' to='#about'>Опис</Link>
-            <Link className='menu__item-link' to='/about'>Наші військові</Link>
-            <Link className='menu__item-link' to='/about'>Вічна пам'ять</Link>
+            <Link className='menu__item-link' to='#battalion'>Наші військові</Link>
+            <Link className='menu__item-link' to='#courage'>Вічна пам'ять</Link>
           </div>
         </li>
         <li className='menu__item'>

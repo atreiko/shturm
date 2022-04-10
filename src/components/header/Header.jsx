@@ -1,13 +1,13 @@
 import React, { useState }  from 'react'
 import './header.scss'
-import { Navigation, Menu } from '../index'
+import { Nav, Menu } from '../index'
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
     <header>
-      <Navigation isOpen={isOpen} setIsOpen={setIsOpen} />
+      <Nav isOpen={isOpen} setIsOpen={setIsOpen} />
       <Menu isOpen={isOpen} />
     </header>
   )

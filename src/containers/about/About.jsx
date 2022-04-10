@@ -1,15 +1,27 @@
 import React from 'react'
 import './_about.scss';
 import Title from '../../components/title/Title';
-import smpu from '../../assets/images/flags/smpu.jpeg';
+import Stars from '../../UI/stars/Stars.jsx';
+import { Mission, Courage, Battalion } from '../index.js';
 
 const About = () => {
   return (
     <section id='about' className='about'>
-      <div className='container'>
-        <Title title='Про нас' />
-        <div className='image-block'>
-          <img src={smpu} alt='image' />
+      <div className='about__inner'>
+        <div className='blur'></div>
+        <div className='container'>
+          <Title title='Про нас' titleClass='title-variant' />
+          <h4>Спілка морських піхотинців України</h4>
+        </div>
+      </div>
+      <div className='about__desc'>
+        <div className='container'>
+          <Mission />
+          <Stars />
+          <div className='about__soldiers'>
+            <Courage />
+            <Battalion />
+          </div>
         </div>
       </div>
     </section>

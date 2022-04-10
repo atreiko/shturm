@@ -6,8 +6,6 @@ import {
   Page404
 } from './pages';
 
-import { About } from './containers';
-
 const App = () => {
   return (
     <Routes> 

@@ -5,7 +5,7 @@
   height: 100vh;
   width: 100%;
   background-color: $color-bg-variant;
-  position: absolute;
+  position: fixed;
   top: -101vh;
   transition: all .4s ease;
   display: flex;
