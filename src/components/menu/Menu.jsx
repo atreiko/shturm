@@ -3,7 +3,7 @@ import './menu.scss'
 import { BsFacebook, BsInstagram } from 'react-icons/bs'
 import { Link } from 'react-router-dom'
 
-const Menu = ({ isOpen }) => {
+const Menu = ({ isOpen, setIsOpen }) => {
 
   return (
     <div className={!isOpen ? 'menu' : 'menu active'}>
@@ -11,23 +11,23 @@ const Menu = ({ isOpen }) => {
         <li className='menu__item'>
           <h3>Про нас</h3>
           <div className='menu__item-links'>
-            <Link className='menu__item-link' to='#about'>Опис</Link>
-            <Link className='menu__item-link' to='#battalion'>Наші військові</Link>
-            <Link className='menu__item-link' to='#courage'>Вічна пам'ять</Link>
+            <Link onClick={ () => setIsOpen() } className='menu__item-link' to='/'>Опис</Link>
+            <Link onClick={ () => setIsOpen() } className='menu__item-link' to='/soldiers'>Наші військові</Link>
+            <Link onClick={ () => setIsOpen() } className='menu__item-link' to='/valor'>Вічна пам'ять</Link>
           </div>
         </li>
         <li className='menu__item'>
           <h3>Мультимедіа</h3>
           <div className='menu__item-links'>
-            <Link className='menu__item-link' to='/about'>Фото</Link>
-            <Link className='menu__item-link' to='/about'>Відео</Link>
+            <Link onClick={ () => setIsOpen() } className='menu__item-link' to='/photos'>Фото</Link>
+            <Link onClick={ () => setIsOpen() } className='menu__item-link' to='/videos'>Відео</Link>
           </div>
         </li>
         <li className='menu__item'>
           <h3>Соціальні мережі</h3>
           <div className='menu__item-links socials'>
-            <Link to='/about'><BsFacebook /></Link>
-            <Link to='/about'><BsInstagram /></Link>
+            <Link onClick={ () => setIsOpen() } to='https://www.facebook.com/'><BsFacebook /></Link>
+            <Link onClick={ () => setIsOpen() } to='https://www.instagram.com/'><BsInstagram /></Link>
           </div>
         </li>
       </ul>

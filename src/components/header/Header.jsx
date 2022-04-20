@@ -8,7 +8,7 @@ const Header = () => {
   return (
     <header>
       <Nav isOpen={isOpen} setIsOpen={setIsOpen} />
-      <Menu isOpen={isOpen} />
+      <Menu isOpen={isOpen} setIsOpen={setIsOpen} />
     </header>
   )
 }

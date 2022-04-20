@@ -1,5 +1,5 @@
 import React from 'react'
-import './_about.scss';
+import './about.scss';
 import Title from '../../components/title/Title';
 import Stars from '../../UI/stars/Stars.jsx';
 import { Mission, Courage, Battalion } from '../index.js';

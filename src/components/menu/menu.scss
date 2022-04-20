@@ -21,6 +21,7 @@
     width: 80vw;
     display: flex;
     flex-wrap: wrap;
+    z-index: 4;
   }
 
   &__item {
@@ -80,7 +81,6 @@
 
     &-link {
       margin-top: 1rem;
-      // padding: 0.469em 45px 0.469em 0;
       color: $color-white;
       text-decoration: none;
       display: flex;

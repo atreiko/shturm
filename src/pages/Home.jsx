@@ -1,15 +1,19 @@
 import React from 'react'
 import Mosaic from '../components/mosaic/Mosaic'
-// import About from './About'
 import { About, Media } from '../containers'
+import { motion } from 'framer-motion'
 
 const Home = () => {
   return (
-    <main>
+    <motion.main
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
       <Mosaic />
       <About />
       <Media />
-    </main>
+    </motion.main>
   )
 }
 

@@ -1,5 +1,6 @@
 import React from 'react'
 import './courage.scss'
+import { Link } from 'react-router-dom';
 import ArrowRight from '../../assets/icons/ArrowRight.jsx';
 
 const Courage = () => {
@@ -18,9 +19,10 @@ const Courage = () => {
           Воїни Русі-України, лицарі Костянтина Острозького, козаки Петра Сагайдачного...
         </p>
         <p>
-          <a href='/#'>
-            Інформаційні матеріали<ArrowRight />
-          </a>
+          <Link to='/valor'>
+            Інформаційні матеріали
+            <ArrowRight />
+          </Link>
         </p>
       </div>
     </div>

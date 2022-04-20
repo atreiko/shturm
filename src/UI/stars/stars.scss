@@ -2,5 +2,12 @@
   display: flex;
   justify-content: center;
   column-gap: .5rem;
-  margin: 2rem 0rem 6rem;
+  margin: 2rem 0rem;
+}
+
+.grey-stars {
+  display: flex;
+  justify-content: left;
+  column-gap: .5rem;
+  margin: 1rem 0rem;
 }
