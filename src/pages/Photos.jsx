@@ -13,7 +13,10 @@ const Photos = () => {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
     >
-      <Content data={data} img />
+      <Content 
+        data={data} 
+        title='Фото'
+      />
     </motion.div>
   )
 }
